@@ -7,15 +7,21 @@ public class Client {
     private String name;
     private String surname;
     private String email;
-    private LocalDate date;
+    /*private LocalDate date;*/
 
-    public Client(int clientCode, String name, String surname, String email, LocalDate date) {
+    public Client(int clientCode, String name, String surname, String email,  String[] strings) {
         this.clientCode = clientCode;
         this.name = name;
         this.surname = surname;
         this.email = email;
-        this.date = LocalDate.now();
+
     }
+
+    public void call(){
+        System.out.println("hello my name and surname are " + this.name + " " + this.surname +
+                ". I would like to make a clarification on a product i ordered. My code is: " + this.clientCode);
+    }
+
 
     @Override
     public String toString() {
@@ -24,7 +30,6 @@ public class Client {
                 ", name='" + name + '\'' +
                 ", surname='" + surname + '\'' +
                 ", email='" + email + '\'' +
-                ", date=" + date +
                 '}';
     }
 
@@ -60,11 +65,5 @@ public class Client {
         this.email = email;
     }
 
-    public LocalDate getDate() {
-        return date;
-    }
 
-    public void setDate(LocalDate date) {
-        this.date = date;
-    }
 }

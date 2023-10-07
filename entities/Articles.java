@@ -15,6 +15,15 @@ public class Articles extends Shop {
         this.totalCost = totalCost;
     }
 
+    public void list(String list)
+    {
+         /*list = new String[10];*/
+        for(int i = 0; i<=this.selectedArticles.length; i++)
+        {
+            System.out.println(this.selectedArticles[i] + this.totalCost);
+        }
+    }
+
     @Override
     public String toString() {
         return "Articles{" +

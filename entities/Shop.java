@@ -11,6 +11,16 @@ public class Shop {
         this.income = income;
     }
 
+    public void support(){
+        System.out.println("Hi this is " + this.customerSupport + " from " + this.website  +
+                " please type in the code you received to confirm if the product is still in your cart");
+    }
+
+    public void checkOutReport()
+    {
+        System.out.println("what did you get?");
+    }
+
     @Override
     public String toString() {
         return "Shop{" +

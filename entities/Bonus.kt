@@ -1,4 +1,0 @@
-package entities
-
-interface Bonus {
-}
